@@ -1,18 +1,18 @@
 module.exports = function solveEquation(equation) {
 
-	var a, b, c, d, x, y, arr;
+	var a, b, c, d, x1, x2, arr;
 
 	equation = equation.replace(/\s/g, "").replace(/\^2/, "").split(/\*x/);
 
 	a = +equation[0];
 	b = +equation[1];
 	c = +equation[2];
-	d = b*b -4 * a*c;
-	x = Math.round((- b - Math.sqrt(d)) / (2 * a));
-	y = Math.round((- b - Math.sqrt(d)) / (2 * a));
-	arr = [x,y];
+	d = b * b -4 * a * c;
+	x1 = Math.round((- b - Math.sqrt(d)) / (2 * a));
+	x2 = Math.round((- b - Math.sqrt(d)) / (2 * a));
+	arr = [x1,x2];
 
-	arr.sort(funtion(a,b){
+	arr.sort(function(a,b){
 		return a-b;
 	})
 
