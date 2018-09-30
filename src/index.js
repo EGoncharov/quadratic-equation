@@ -10,7 +10,7 @@ module.exports = function solveEquation(equation) {
 	d = b*b -4 * a*c;
 	x = Math.round((- b - Math.sqrt(d)) / (2 * a));
 	y = Math.round((- b - Math.sqrt(d)) / (2 * a));
-	arr = [x;y];
+	arr = [x,y];
 
 	arr.sort(funtion(a,b){
 		return a-b;
